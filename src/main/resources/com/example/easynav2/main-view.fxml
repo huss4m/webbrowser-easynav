@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.easynav2.MainController">
+   <children>
+      <WebView fx:id="webView" layoutX="43.0" layoutY="124.0" prefHeight="758.0" prefWidth="1159.0" />
+      <Label layoutX="978.0" prefHeight="73.0" prefWidth="274.0" text="EasyNav">
+         <font>
+            <Font name="Monotype Corsiva" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="urlField" layoutX="41.0" layoutY="75.0" prefHeight="25.0" prefWidth="943.0" />
+      <Button fx:id="refreshButton" layoutX="994.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleRefreshButtonAction" text="Refresh" />
+      <Button fx:id="previousButton" layoutX="1055.0" layoutY="75.0" mnemonicParsing="false" onAction="#handlePreviousButtonAction" text="Previous" />
+      <Button fx:id="nextButton" layoutX="1123.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleNextButtonAction" text="Next" />
+      <Button fx:id="zoomInButton" layoutX="43.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleZoomInButtonAction" text="Zoom In" />
+      <Button fx:id="zoomOutButton" layoutX="108.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleZoomOutButtonAction" text="Zoom Out" />
+      <Button fx:id="displayHistoryButton" layoutX="231.0" layoutY="50.0" mnemonicParsing="false" onAction="#displayHistory" text="History" />
+   </children>
+</AnchorPane>
